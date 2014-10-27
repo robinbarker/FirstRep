@@ -1,0 +1,59 @@
+	private void RunLocalWatcherx(Handler h, Integer tabNo, Integer waitToStart){
+		Logv(TAG,"new LocalWatcher tabNo "+tabNo+"  waitToStart "+waitToStart);
+		new LocalWatcherx(h, tabNo, waitToStart).execute("");
+
+	}
+
+	private  class LocalWatcherx extends AsyncTask<String, Void, String> {
+
+		Handler mainUIHandler;
+		int tabNo;
+		int waitToStart;
+
+		public LocalWatcherx(Handler muih, Integer tabNo, Integer waitToStart){
+			this.mainUIHandler = muih;
+			this.tabNo = tabNo;
+			this.waitToStart = waitToStart;
+		}
+
+
+		@Override
+		protected String doInBackground(String... params) {
+			try {
+				Logv(TAG,"LocalWatcherx doInBackground before sleep tabNo "+tabNo+" waitToStart "+waitToStart);
+				try {
+					   
+						Thread.sleep(waitToStart*1000); // wait check for new email
+	                } catch (Exception e) {
+						e.printStackTrace();
+	                }
+		//		GetMail(false, tabNo);
+			} catch(Exception e) {
+				e.printStackTrace();  
+			}
+
+			return "Executed";
+		}      
+		@Override
+		protected void onPostExecute(String result) {
+			Logv(TAG, "-------------onPostExecute Test--------------");
+			android.os.Message msg = android.os.Message.obtain();
+			// Bookmark010 (see fragment1.java)
+			msg.what = 1;
+			mainUIHandler.sendMessage(msg);
+		}
+
+		@Override
+		protected void onPreExecute() {
+
+			Logv(TAG, "-------------onPreExecute Test--------------");
+		}
+
+		@Override
+		protected void onProgressUpdate(Void... values) {
+			// Bookmark011 (see fragment1.java)
+			android.os.Message msg = android.os.Message.obtain();
+			msg.what = 2;
+			mainUIHandler.sendMessage(msg);
+		}
+	}   

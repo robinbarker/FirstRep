@@ -1,0 +1,7 @@
+         <ListPreference
+                android:key="NumberofTabs_preference"
+                android:title="Number of Tabs"
+                android:summary="summary_list_preference"
+                android:entries="@array/listDisplayNumberofTabs"
+                android:entryValues="@array/listReturnValueNumberofTabs"
+                android:dialogTitle="Number of Tabs" />  

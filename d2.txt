@@ -1,0 +1,101 @@
+
+AirDroid com.sand.airdroid
+Android System android
+API Demos com.example.android.apis
+ASUS Keyboard com.nuance.xt9.input
+Basic Daydreams com.android.dreams.basic
+Bluetooth Share com.android.bluetooth
+Bubbles com.android.noisefield
+Calculator com.android.calculator2
+Calendar com.google.android.calendar
+Calendar Storage com.android.providers.calendar
+CBC News ca.cbc.mobile.android.cbcnewsandroidwebview
+Certificate Installer com.android.certinstaller
+Chrome com.android.chrome
+Clock com.google.android.deskclock
+Colors com.citc.colors
+com.android.backupconfirm com.android.backupconfirm
+com.android.browser.provider com.android.browser.provider
+com.android.providers.partnerbookmarks com.android.providers.partnerbookmarks
+com.android.sharedstoragebackup com.android.sharedstoragebackup
+com.android.wallpaper.holospiral com.android.wallpaper.holospiral
+com.google.android.voicesearch com.google.android.voicesearch
+ConfigUpdater com.google.android.configupdater
+Contacts com.android.contacts
+Contacts Storage com.android.providers.contacts
+Currents com.google.android.apps.currents
+Device Policy com.google.android.apps.enterprise.dmagent
+Document Viewer com.tf.thinkdroid.sg
+Download Manager com.android.providers.downloads
+Downloads com.android.providers.downloads.ui
+DRM Protected Content Storage com.android.providers.drm
+Earth com.google.earth
+Email com.google.android.email
+Exchange Services com.google.android.exchange
+Face Unlock com.android.facelock
+Fused Location com.android.location.fused
+Gallery com.google.android.gallery3d
+GC_FOR_ALLOC freed 422K, 6% free 7700K/8184K, paused 14ms, total 14ms
+Gmail com.google.android.gm
+Google Account Manager com.google.android.gsf.login
+Google Backup Transport com.google.android.backup
+Google Contacts Sync com.google.android.syncadapters.contacts
+Google Hindi Input com.google.android.apps.inputmethod.hindi
+Google Keyboard com.google.android.inputmethod.latin
+Google Korean keyboard com.google.android.inputmethod.korean
+Google One Time Init com.google.android.onetimeinitializer
+Google Partner Provisioning Service com.google.android.partner.provisioning
+Google Partner Setup com.google.android.partnersetup
+Google Pinyin com.google.android.inputmethod.pinyin
+Google Play Books com.google.android.apps.books
+Google Play Movies & TV com.google.android.videos
+Google Play Music com.google.android.music
+Google Play Newsstand com.google.android.apps.magazines
+Google Play services com.google.android.gms
+Google Play Store com.android.vending
+Google Search com.google.android.googlequicksearchbox
+Google Services Framework com.google.android.gsf
+Google Text-to-speech Engine com.google.android.tts
+Google+ com.google.android.apps.plus
+GPS Tracker com.example
+Hangouts com.google.android.talk
+HTML Viewer com.android.htmlviewer
+Input Devices com.android.inputdevices
+iWnn IME jp.co.omronsoft.iwnnime.ml
+iWnnIME Keyboard (White) jp.co.omronsoft.iwnnime.ml.kbd.white
+Keep com.google.android.keep
+Key Chain com.android.keychain
+Launcher com.android.launcher
+Live Wallpaper Picker com.android.wallpaper.livepicker
+Maps com.google.android.apps.maps
+Market Feedback Agent com.google.android.feedback
+Media Storage com.android.providers.media
+Mobile Data com.android.phone
+Mobile Network Configuration com.android.providers.telephony
+MusicFX com.android.musicfx
+Network Location com.google.android.location
+NFC Provisioner com.google.android.nfcprovision
+Nfc Service com.android.nfc
+One Time Init com.android.onetimeinitializer
+OverDrive Media Console com.overdrive.mobile.android.mediaconsole
+Package Access Helper com.android.defcontainer
+Package installer com.android.packageinstaller
+Phase Beam com.android.phasebeam
+Picasa Uploader com.google.android.apps.uploader
+Search Applications Provider com.android.providers.applications
+Settings com.android.settings
+Settings Storage com.android.providers.settings
+Setup Wizard com.google.android.setupwizard
+Shell com.android.shell
+Simple message receiver com.android.basicsmsreceiver
+Sound Search for Google Play com.google.android.ears
+Street View com.google.android.street
+System UI com.android.systemui
+Tags com.google.android.tag
+TalkBack com.google.android.marvin.talkback
+Tendre com.talismansoftware.tendre
+User Dictionary com.android.providers.userdictionary
+VpnDialogs com.android.vpndialogs
+Wallet com.google.android.apps.walletnfcrel
+Who Am I? com.google.android.widget.userinfo
+YouTube com.google.android.youtube

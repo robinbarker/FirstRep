@@ -1,0 +1,127 @@
+public void onCreate( Bundle savedInstanceState )
+	{
+		
+
+		super.onCreate( savedInstanceState );
+
+		
+		ActionBar ab = getActionBar();
+		ab.setNavigationMode( ActionBar.NAVIGATION_MODE_TABS );
+
+		Tab tab;
+
+		if(control.numTabs > 0){
+			TextView tv1 = new TextView(this);
+			tv1.setText(control.firstTabText);
+			tv1.setTextColor(0xFFFFFFFF);
+			tv1.setTextSize(TypedValue.COMPLEX_UNIT_SP,control.tabTextSizeSP);
+
+			tab = ab.newTab()
+					
+					.setTabListener( 
+							new MyTabListener( this, 
+									Fragment1.class.getName() ) )
+									.setCustomView(tv1);
+			ab.addTab( tab );
+		}
+
+
+		if(control.numTabs > 1){
+			TextView tv2 = new TextView(this);
+			tv2.setText(control.secondTabText);
+			tv2.setTextColor(0xFFFFFFFF);
+			tv2.setTextSize(TypedValue.COMPLEX_UNIT_SP,control.tabTextSizeSP);
+
+			tab = ab.newTab()
+					
+					.setTabListener( 
+							new MyTabListener( this, 
+									Fragment1.class.getName() ) )
+									.setCustomView(tv2);				
+			ab.addTab( tab );
+		}
+
+		
+	}
+
+
+	private class MyTabListener implements ActionBar.TabListener
+	{
+		private Fragment mFragment;
+		private final Activity mActivity;
+		private final String mFragName;
+
+
+		public MyTabListener( Activity activity, String fragName )
+		{
+			mActivity = activity;
+			mFragName = fragName;
+		}
+
+		@Override
+		public void onTabReselected( Tab tab, FragmentTransaction ft )
+		{
+		}
+
+		@Override
+		public void onTabSelected( Tab tab, FragmentTransaction ft )
+		{
+			
+			if(tab.getPosition() == 0){
+				if(!frag1Viewed){
+					mFragment = Fragment.instantiate( mActivity, mFragName );
+					Bundle args = new Bundle();
+					args.putInt("tabno", 0);
+					mFragment.setArguments(args);
+					ft.add( android.R.id.content, mFragment );
+					frag1Viewed = true;			
+				}
+				else {
+					ft.show(mFragment);
+				}
+
+			}
+			if(tab.getPosition() == 1){
+				if(!frag2Viewed){
+					mFragment = Fragment.instantiate( mActivity, mFragName );
+					Bundle args = new Bundle();
+					args.putInt("tabno", 1);
+					mFragment.setArguments(args);
+					ft.add( android.R.id.content, mFragment );
+					frag2Viewed = true;
+				}
+				else {
+					ft.show(mFragment);
+				}
+
+			} 
+
+
+                }
+		@Override
+		public void onTabUnselected( Tab tab, FragmentTransaction ft )
+		{
+			
+			if(control.AllowOnCreateChange)control.onCreateOptionsMenuOnce = false;
+			if(tab.getPosition() == 0){
+				if(!frag1Viewed){
+					ft.remove( mFragment );
+					mFragment = null;			
+				}
+				else {
+					ft.hide( mFragment );
+				}
+
+			}
+			if(tab.getPosition() == 1){
+				if(!frag2Viewed){
+					ft.remove( mFragment );
+					mFragment = null;
+				}
+				else {
+					ft.hide( mFragment );
+				}
+
+			} 
+		}
+	}

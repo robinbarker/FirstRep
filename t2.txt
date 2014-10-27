@@ -1,0 +1,179 @@
+<LinearLayout
+   android:layout_width="fill_parent"
+    
+    android:layout_height="fill_parent" 
+    android:useDefaultMargins="true"
+     android:alignmentMode="alignBounds"
+     android:columnOrderPreserved="false"
+     android:weightSum="1"  
+     >
+<Button
+    
+      android:id="@+id/buttonPreviousx"
+     android:layout_marginTop="10dp"
+      android:layout_width="0px"
+      android:layout_weight=".333"
+      android:background="#ffffff"
+      android:textSize="35dip"
+      android:text="Previous"
+      android:layout_gravity="left"
+      android:layout_marginLeft="20dp"
+      android:drawableLeft="@drawable/ic_media_previous"
+/>            
+<Button
+    
+      android:id="@+id/buttonPlayx"
+     android:layout_marginTop="10dp"
+      android:layout_width="0px"
+       android:layout_weight=".333"
+      android:background="#ffffff"
+      android:textSize="35dip"
+       android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+      android:text="Play"
+      android:layout_gravity="center"
+     
+      android:drawableLeft="@drawable/ic_media_play"
+      
+/>    
+<Button
+    
+      android:id="@+id/buttonNextx"
+      android:layout_marginTop="10dp"
+      android:layout_width="0px"
+      android:layout_weight=".333"
+      android:background="#ffffff"
+      android:textSize="35dip"
+      android:text="Next"
+      android:layout_marginRight="20dp"
+      android:layout_gravity="right"
+      android:drawableLeft="@drawable/ic_media_next"
+/>    
+    
+    
+    
+    
+</LinearLayout>    
+
+-----------------------------------------------------------------------------------------------
+
+<LinearLayout
+   android:layout_width="fill_parent"
+    
+    android:layout_height="fill_parent" 
+    android:useDefaultMargins="true"
+     android:alignmentMode="alignBounds"
+     android:columnOrderPreserved="false"
+     android:weightSum="1"  
+     >
+<Button
+    
+      android:id="@+id/buttonPreviousx"
+     
+      android:layout_width="0px"
+      android:layout_weight=".333"
+      android:background="#ffffff"
+      android:textSize="35dip"
+      android:text="Previous"
+      
+      
+      android:drawableLeft="@drawable/ic_media_previous"
+/>            
+<Button
+    
+      android:id="@+id/buttonPlayx"
+     
+      android:layout_width="0px"
+       android:layout_weight=".333"
+      android:background="#ffffff"
+      android:textSize="35dip"
+    
+      android:text="Play"
+      
+     
+      android:drawableLeft="@drawable/ic_media_play"
+      
+/>    
+<Button
+    
+      android:id="@+id/buttonNextx"
+    
+      android:layout_width="0px"
+      android:layout_weight=".333"
+      android:background="#ffffff"
+      android:textSize="35dip"
+      android:text="Next"
+      
+     
+      android:drawableLeft="@drawable/ic_media_next"
+/>    
+    
+    
+    
+    
+</LinearLayout> 
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------    
+
+
+<Button
+    
+      android:id="@+id/buttonPlayx"
+     
+      android:layout_width="0px"
+      android:layout_height="wrap_content"
+       android:layout_weight=".333"
+      android:background="#ff0000"
+      android:textSize="35dip"
+      android:gravity="center_horizontal"
+    android:drawablePadding="-80dip" 
+      android:text="Play"
+     
+     
+      android:drawableLeft="@drawable/ic_media_play"
+      
+/>    
+
+
+---------------------------------------------------------------------------
+
+
+
+ android:drawablePadding="-20dip"
+
+
+
+android:drawablePadding="-80dip" 
+
+
+
+
+android:drawablePadding="-20dip" 
+     
+      android:drawableLeft="@drawable/ic_media_previous" 
+android:background="#00ff00"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

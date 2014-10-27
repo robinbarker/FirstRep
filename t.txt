@@ -1,0 +1,1 @@
+Insert into Music (LocalDBID, Artist, Title, UserID) values (132, 'Bryan Adams', 'Walk On By',1)
